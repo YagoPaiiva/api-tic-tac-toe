@@ -5,7 +5,7 @@ let board = Array(9).fill("")
 let select = !!Math.round(Math.random())
 
 const currentPlayer = (select:Boolean) =>{
-  return select === true ? "X" : "O"
+  return select ? "X" : "O"
 }
 interface RoomUser {
   socket_id: string,
